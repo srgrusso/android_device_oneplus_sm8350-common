@@ -310,6 +310,7 @@ PRODUCT_PACKAGES += \
     FrameworksResTarget \
     OPlusFrameworksResCommon \
     OPlusSettingsResCommon \
+    OPlusSystemUIResCommon \
     WifiResTarget
 
 # Oplus Camera
