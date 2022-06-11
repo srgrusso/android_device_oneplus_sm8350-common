@@ -18,6 +18,9 @@ ro.com.baidu.input.pad_land_l=19
 ro.com.baidu.input.pad_land_r=19
 ro.com.baidu.input.pad_land_b=10
 
+# Camera
+persist.vendor.camera.privapp.list=com.oplus.camera,com.android.camera,org.codeaurora.snapcam
+vendor.camera.aux.packagelist=com.oplus.camera,com.android.camera,org.codeaurora.snapcam
 
 # GMS
 ro.opa.device_model_id=ga-oplus-skill-os121-211011
