@@ -6,6 +6,7 @@
 /mnt/vendor/persist/dual_camera_calibration(/.*)?    u:object_r:vendor_persist_camera_file:s0
 
 # Charging
+/(odm|vendor/odm)/bin/hw/vendor\.oplus\.hardware\.charger@1\.0-service            u:object_r:hal_charger_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.lineage\.powershare@1\.0-service\.oplus    u:object_r:hal_lineage_powershare_default_exec:s0
 
 # Display

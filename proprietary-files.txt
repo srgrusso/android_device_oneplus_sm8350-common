@@ -872,6 +872,13 @@ vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc
 vendor/etc/charger_fstab.qti
 vendor/etc/charger_fw_fstab.qti
 
+# Charger (OOS)
+odm/bin/hw/vendor.oplus.hardware.charger@1.0-service
+odm/etc/init/vendor.oplus.hardware.charger@1.0-service.rc
+-odm/etc/vintf/manifest/manifest_oplus_charger.xml
+odm/lib64/vendor.oplus.hardware.charger@1.0.so
+odm/lib/vendor.oplus.hardware.charger@1.0.so
+
 # CNE
 vendor/app/CneApp/CneApp.apk
 vendor/bin/cnd

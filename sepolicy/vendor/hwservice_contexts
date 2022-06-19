@@ -1,6 +1,9 @@
 # Camera
 vendor.oplus.hardware.cammidasservice::IMIDASService    u:object_r:hal_camera_hwservice:s0
 
+# Charger
+vendor.oplus.hardware.charger::ICharger u:object_r:hal_charger_hwservice:s0
+
 # Display (Pixelworks)
 vendor.pixelworks.hardware.display::IIris           u:object_r:hal_graphics_composer_hwservice:s0
 vendor.pixelworks.hardware.feature::IIrisFeature    u:object_r:hal_graphics_composer_hwservice:s0
