@@ -158,8 +158,5 @@ sys.usb.mtp.batchcancel=1
 vendor.usb.diag.func.name=ffs
 vendor.usb.use_ffs_mtp=1
 
-# WiFi
-wifi.aware.interface=wifi-aware0
-
 # Seamless transfer
 sys.fflag.override.settings_seamless_transfer=true
