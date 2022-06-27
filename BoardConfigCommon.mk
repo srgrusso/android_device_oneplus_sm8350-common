@@ -76,7 +76,7 @@ TARGET_SURFACEFLINGER_UDFPS_LIB := //hardware/oplus:libudfps_extension.oplus
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(COMMON_PATH)/device_framework_matrix.xml \
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
-    vendor/aosp/config/device_framework_matrix.xml
+    vendor/bliss/config/device_framework_matrix.xml
 DEVICE_MATRIX_FILE := $(COMMON_PATH)/compatibility_matrix.xml
 DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
 
@@ -108,7 +108,6 @@ TARGET_KERNEL_ADDITIONAL_FLAGS := LLVM=1 AS=llvm-as AR=llvm-ar NM=llvm-nm OBJCOP
 TARGET_KERNEL_SOURCE := kernel/oneplus/sm8350
 TARGET_KERNEL_CONFIG := vendor/lahaina-qgki_defconfig
 TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_CLANG_VERSION := r450784e
 
 # Kernel modules
 BOARD_VENDOR_KERNEL_MODULES_BLOCKLIST_FILE := $(COMMON_PATH)/modules.blocklist
