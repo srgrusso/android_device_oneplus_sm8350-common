@@ -16,5 +16,12 @@ ro.oppo.                            u:object_r:exported_system_prop:s0
 ro.vendor.oplus.                    u:object_r:exported_system_prop:s0
 sys.oppo_ftm_mode                   u:object_r:exported_system_prop:s0
 
+# Radio
+ro.sys.reserve.integrate    u:object_r:exported_system_prop:s0
+
+# SVN
+ro.build.version.svn      u:object_r:exported_system_prop:s0
+ro.build.version.svn.c    u:object_r:exported_system_prop:s0
+
 # Version
 ro.separate.soft    u:object_r:system_oplus_project_prop:s0
