@@ -63,4 +63,7 @@
 
     <!-- Whether the device supports wireless charging or not -->
     <bool name="config_deviceSupportsWirelessCharging">true</bool>
+
+    <!-- Whether device has warp charging support -->
+    <bool name="config_hasWarpCharger">true</bool>
 </resources>
