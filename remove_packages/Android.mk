@@ -4,7 +4,15 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := RemovePackages
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_TAGS := optional
-LOCAL_OVERRIDES_PACKAGES := AmbientSensePrebuilt AppDirectedSMSService CarrierSetup ConnMO DCMO DMService MyVerizonServices OBDM_Permissions Showcase SprintDM SprintHM USCCDM VZWAPNLib VzwOmaTrigger obdm_stub DevicePolicyPrebuilt DiagnosticsToolPrebuilt Drive HelpRtcPrebuilt Maps PrebuiltGmail RecorderPrebuilt MicropaperPrebuilt CalculatorGooglePrebuilt GoogleCamera SoundAmplifierPrebuilt PrebuiltGoogleTelemetryTvp BetterBug GooglePrintRecommendationService TagGoogle GoogleFeedback Tycho YouTubeMusicPrebuilt Videos MaestroPrebuilt
+LOCAL_OVERRIDES_PACKAGES := \
+	Chrome \
+	Chrome-Stub \
+	Drive \
+	Maps \
+	Photos \
+	PixelLiveWallpaperPrebuilt \
+	PixelWallpapers2021 \
+	PrebuiltGmail
 LOCAL_UNINSTALLABLE_MODULE := true
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_SRC_FILES := /dev/null
