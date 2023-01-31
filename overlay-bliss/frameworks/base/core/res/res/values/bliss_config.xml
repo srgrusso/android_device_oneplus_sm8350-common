@@ -83,4 +83,10 @@
 	<item>/sys/devices/platform/soc/soc:oplus,chg_intf/soc:oplus,chg_intf:oplus,wireless-charge/oplus_chg/wireless/fastchg_status</item>
     </string-array>
 
+    <!-- The list of package IDs that are allowed to skip camera high frame rate checks. -->
+    <string-array name="config_cameraHFRPrivAppList" translatable="false">
+        <item>com.android.camera</item>
+        <item>com.oplus.camera</item>
+        <item>org.lineageos.aperture</item>
+    </string-array>
 </resources>
