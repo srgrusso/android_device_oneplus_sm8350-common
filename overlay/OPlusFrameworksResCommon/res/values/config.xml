@@ -198,4 +198,8 @@
          available on some devices. -->
     <bool name="config_enableHapticTextHandle">true</bool>
 
+
+    <!-- Whether key handler sends intent when changing slider position -->
+    <string name="config_alertSliderIntent">org.evolution.oplus.OPlusExtras.slider.UPDATE_SLIDER_POSITION</string>
+
 </resources>
