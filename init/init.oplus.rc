@@ -45,6 +45,10 @@ on boot
     # Hyper Touch
     chown system system /proc/touchpanel/game_switch_enable
 
+    # TP Edge Touch Limit
+    chown system system /proc/touchpanel/oplus_tp_direction
+    write /proc/touchpanel/oplus_tp_direction 0
+
     # OIS
     chown cameraserver cameraserver /sys/kernel/ois_control/dump_registers
 
