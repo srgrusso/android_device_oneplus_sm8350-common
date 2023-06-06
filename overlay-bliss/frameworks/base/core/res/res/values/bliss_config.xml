@@ -13,13 +13,13 @@
    <!-- Paths to the libraries that contain device specific key handlers -->
     <string-array name="config_deviceKeyHandlerLibs" translatable="false">
         <item>/system_ext/priv-app/OPlusExtras/OPlusExtras.apk</item>
-        <item>/system_ext/priv-app/OPlusExtras/OPlusExtras.apk</item>
+        <item>/system_ext/priv-app/TouchGestures/TouchGestures.apk</item>
     </string-array>
 
     <!-- Names of the key handler classes -->
     <string-array name="config_deviceKeyHandlerClasses" translatable="false">
         <item>org.evolution.oplus.OPlusExtras.slider.KeyHandler</item>
-        <item>org.evolution.oplus.OPlusExtras.touch.KeyHandler</item>
+        <item>com.android.touch.gestures.KeyHandler</item>
     </string-array>
 
     <!-- Whether device has physical tri state switch -->

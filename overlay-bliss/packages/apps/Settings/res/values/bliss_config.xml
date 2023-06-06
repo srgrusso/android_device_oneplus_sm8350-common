@@ -8,4 +8,7 @@
     <!-- Max network scan search time in seconds -->
     <integer name="config_network_scan_helper_max_search_time_sec">254</integer>
 
+    <!-- Whether to show Touch Gestures Settings -->
+    <bool name="config_show_touch_gestures_settings">true</bool>
+
 </resources>
