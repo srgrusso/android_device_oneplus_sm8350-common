@@ -238,6 +238,7 @@ PRODUCT_PACKAGES += \
     init.oplus.hw.rc \
     init.oplus.hw.rc.recovery \
     init.oplus.rc \
+    init.oplus_extras.rc \
     init.oplus.sh \
     init.qcom.early_boot.sh \
     init.qcom.rc \
@@ -315,6 +316,11 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_BOOT_JARS += \
     oplus-support-wrapper
 
+# OPlusExtras
+PRODUCT_PACKAGES += \
+    OPlusExtras \
+    tri-state-key-calibrate
+
 # Overlays
 $(call inherit-product, hardware/oplus/overlay/qssi/qssi.mk)
 
@@ -325,6 +331,7 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_PACKAGES += \
     CarrierConfigResCommon \
     FrameworksResTarget \
+    OPlusExtrasResCommon \
     OPlusFrameworksResCommon \
     OPlusSettingsResCommon \
     OPlusSystemUIResCommon \
