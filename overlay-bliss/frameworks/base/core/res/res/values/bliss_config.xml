@@ -84,4 +84,11 @@
         <item>com.oplus.camera</item>
         <item>org.lineageos.aperture</item>
     </string-array>
+
+    <!-- Whether device has VOOC charging support -->
+    <bool name="config_hasVoocCharger">true</bool>
+
+    <!-- Path to fast charging status file to detect whether an oem fast charger is active -->
+    <string name="config_oemFastChargerStatusPath" translatable="false">/sys/devices/platform/soc/soc:oplus,chg_intf/oplus_chg/battery/voocchg_ing</string>
+
 </resources>
