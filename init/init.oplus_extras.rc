@@ -51,6 +51,11 @@ on boot
     chown system system /proc/wireless/user_sleep_mode
     chmod 0666 /proc/wireless/user_sleep_mode
 
+    # TP-edge limit
+    chown system system /proc/touchpanel/oplus_tp_direction
+    chmod 0666 /proc/touchpanel/oplus_tp_direction
+    write /proc/touchpanel/oplus_tp_direction 0
+
     # USB-OTG
     chown system /sys/class/oplus_chg/usb/otg_switch
     chmod 0666 /sys/class/oplus_chg/usb/otg_switch

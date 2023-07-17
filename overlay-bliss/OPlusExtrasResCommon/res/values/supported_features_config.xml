@@ -32,6 +32,9 @@
     <!-- Whether device supports OEM Wireless Charger Quiet Mode -->
     <bool name="config_deviceSupportsQuietMode">false</bool>
 
+    <!-- Whether device supports Disabling Edge Limit -->
+    <bool name="config_deviceSupportsDisablingEdgeLimit">true</bool>
+
     <!-- Whether device supports High Touch Polling Rate -->
     <bool name="config_deviceSupportsHightTouchPollingRate">true</bool>   
 
