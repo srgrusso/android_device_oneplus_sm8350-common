@@ -84,4 +84,11 @@
         <item>com.oplus.camera</item>
         <item>org.lineageos.aperture</item>
     </string-array>
+
+    <!-- Whether device has warp charging support -->
+    <bool name="config_hasWarpCharger">true</bool>
+
+    <!-- Path to warp charging status file -->
+    <string name="config_WarpChargerStatusPath">"/sys/class/oplus_chg/battery/fast_charge"</string>
+
 </resources>
