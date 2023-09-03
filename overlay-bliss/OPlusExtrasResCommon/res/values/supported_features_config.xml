@@ -33,7 +33,7 @@
     <bool name="config_deviceSupportsPowerShare">true</bool>
 
     <!-- Whether device supports OEM Wireless Charger Quiet Mode -->
-    <bool name="config_deviceSupportsQuietMode">true</bool>
+    <bool name="config_deviceSupportsQuietMode">false</bool>
 
     <!-- Whether device supports Disabling Edge Limit -->
     <bool name="config_deviceSupportsDisablingEdgeLimit">true</bool>
