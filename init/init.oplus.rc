@@ -42,6 +42,10 @@ on boot
     # Sensors
     chown system system /sys/devices/platform/soc/soc:sensor_fb/adsp_notify
 
+    # Smart charging input suspend node
+    chown system system /sys/devices/platform/soc/soc:oplus,chg_intf/oplus_chg/battery/mmi_charging_enable
+    chmod 0666 /sys/devices/platform/soc/soc:oplus,chg_intf/oplus_chg/battery/mmi_charging_enable
+
     # TOF
     chown cameraserver cameraserver /sys/kernel/tof_control/app0/alg_setting
     chown cameraserver cameraserver /sys/kernel/tof_control/app0/app0_apply_fac_calib
