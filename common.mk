@@ -114,10 +114,13 @@ PRODUCT_PACKAGES += \
 TARGET_ENABLE_BLUR := true
 
 # Camera
+$(call inherit-product, vendor/oneplus/camera/camera-vendor.mk)
+
 PRODUCT_PACKAGES += \
     android.frameworks.stats@1.0.vendor \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service_64 \
+    libcamera2ndk_vendor \
     vendor.qti.hardware.camera.postproc@1.0.vendor
 
 PRODUCT_COPY_FILES += \
@@ -309,6 +312,24 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     OPlusExtras \
     tri-state-key-calibrate
+
+# OnePlus camera
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/permissions/privapp-permissions-product-oplus.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-product-oplus.xml \
+    $(LOCAL_PATH)/configs/permissions/oplus_camera_default_grant_permissions_list.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/default-permissions/oplus_camera_default_grant_permissions_list.xml \
+    $(LOCAL_PATH)/configs/permissions/privapp-permissions-oplus.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-oplus.xml \
+    $(LOCAL_PATH)/configs/sysconfig/hiddenapi-package-oplus-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/hiddenapi-package-oplus-whitelist.xml
+
+# Oplus framework
+PRODUCT_PACKAGES += \
+    oplus-fwk.lahaina
+
+PRODUCT_BOOT_JARS += \
+    oplus-fwk.lahaina
+
+# OnePlus wrapper
+PRODUCT_BOOT_JARS += \
+    oplus-support-wrapper
 
 # Overlays
 $(call inherit-product, hardware/oplus/overlay/generic/generic.mk)
