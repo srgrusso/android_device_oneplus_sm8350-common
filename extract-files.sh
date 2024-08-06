@@ -73,6 +73,9 @@ function blob_fixup() {
         odm/etc/camera/config/oplus_camera_config)
             sed -i '/"VendorTag": "com.oplus.feature.video.4k.60fps.support"/{n;n;n;s/"Value": "1"/"Value": "0"/}' "${2}"
             ;;
+        product/app/PowerOffAlarm/PowerOffAlarm.apk)
+            apktool_patch "${2}" "${MY_DIR}/blob-patches/PowerOffAlarm.patch" -s
+            ;;
         product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml)
             sed -i "s/\/my_product/\/product/" "${2}"
             ;;
