@@ -286,6 +286,9 @@ PRODUCT_SOONG_NAMESPACES += \
 # Storage
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
+# Scudo
+PRODUCT_USE_SCUDO := true
+
 # Telephony
 PRODUCT_PACKAGES += \
     extphonelib \
