@@ -130,6 +130,10 @@ PRODUCT_COPY_FILES += \
 # Dolby
 $(call inherit-product, hardware/oplus/dolby/dolby.mk)
 
+# Doze
+PRODUCT_PACKAGES += \
+    OplusDoze
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey \
